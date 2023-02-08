@@ -29,6 +29,11 @@ h3 {
   line-height: 60px;
 }
 
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
 p {
   font-size: 20px;
   line-height: 30px;
@@ -84,12 +89,13 @@ img {
     font-size: 20px;
     line-height: 30px;
   }
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
   p {
     font-size: 14px;
     line-height: 21px;
-  }
-  a {
-    font-size: 12px;
   }
   .cta {
     font-size: 12px;
@@ -119,14 +125,8 @@ header .container .cta:hover {
   header .container {
     margin-top: 24px;
   }
-  header .container .cta {
-    font-size: 9.41px;
-  }
   header .container img {
     width: 96px;
-  }
-  header .container .cta {
-    padding: 5px 18px;
   }
 }
 .hero .container {
@@ -342,7 +342,7 @@ header .container .cta:hover {
     margin-bottom: 40px;
   }
   .footer-bg {
-    padding-top: 180px;
+    padding-top: 150px;
     margin-top: 150px;
     background-image: url("./images/bg-footer-top-mobile.svg");
   }
@@ -426,6 +426,8 @@ input:-webkit-autofill:active {
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
 }
 #submit:hover {
   background-color: hsl(321deg, 100%, 78%);
@@ -452,7 +454,7 @@ input:-webkit-autofill:active {
 @media only screen and (max-width: 700px) {
   footer .container {
     flex-direction: column-reverse;
-    padding: 100px calc(8px + 1.5625vw) 46px calc(8px + 1.5625vw);
+    padding: 10px calc(8px + 1.5625vw) 46px calc(8px + 1.5625vw);
   }
   .footer-left {
     margin-top: 104px;
@@ -469,7 +471,7 @@ input:-webkit-autofill:active {
     margin-right: 0;
   }
   #submit {
-    background-color: hsl(322deg, 100%, 66%);
     width: 160px;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
