@@ -16,8 +16,8 @@ Huddle landing page
 
 ### Links
 
-- Git URL: https://github.com/thusmiley/meet.git
-- Live Site URL: https://thusmiley.github.io/meet/
+- Git URL: https://github.com/thusmiley/huddle-lp.git
+- Live Site URL: https://thusmiley.github.io/huddle-lp/
 
 
 ### Built with
@@ -28,3 +28,4 @@ Huddle landing page
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Javascript
