@@ -282,6 +282,9 @@ header .container .cta:hover {
     margin-top: 16px;
     max-width: 100%;
   }
+  .grow-together .container h3, .convos .container h3, .users .container h3 {
+    margin-top: 40px;
+  }
   .illus-content {
     margin-right: 0;
   }
@@ -338,6 +341,7 @@ header .container .cta:hover {
   }
   .footer-bg {
     padding-top: 180px;
+    margin-top: 150px;
     background-image: url("./images/bg-footer-top-mobile.svg");
   }
 }
@@ -418,6 +422,7 @@ input:-webkit-autofill:active {
   padding: 12px 41px;
   color: white;
   font-weight: 600;
+  border-radius: 6px;
   cursor: pointer;
 }
 #submit:hover {
