@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap')
+
+$Pink: hsl(322, 100%, 66%)
+$Light-Pink: hsl(321, 100%, 78%)
+$Light-Red: hsl(0, 100%, 63%)
+$Very-Dark-Cyan: hsl(192, 100%, 9%)
+$Very-Pale-Blue: hsl(207, 100%, 98%)    
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Open Sans', sans-serif
+    color: $Very-Dark-Cyan
+
+h1, h2, h3
+    font-family: 'Poppins', sans-serif    
+h1
+    font-size: 48px
+    line-height: 72px
+h2
+    font-size: 96px
+    line-height: 144px
+h3
+    font-size: 40px
+    line-height: 60px
+p
+    font-size: 20px
+    line-height: 30px
+a
+    font-size: 20px
+    text-decoration: none
+    color: white
+    font-family: 'Open Sans', sans-serif
+.cta    
+    border-radius: 40px
+    box-shadow: 0.5px 0  4px 0.5px rgba(0, 0, 0, 0.05)
+    background-color: $Pink
+    padding: 25px 100px
+    transition: 0.3s ease
+    &:hover
+        background-color: $Light-Pink
+
+img
+    max-width: 100%
+    display: block
+.container
+    max-width: 1110px
+    margin: 0 auto
+    padding-left:  calc(8px + 1.5625vw)
+    padding-right:  calc(8px + 1.5625vw)
+@media only screen and (max-width: 1150px)  
+    h2
+        font-size: 70px
+        line-height: 100px
+@media only screen and (max-width: 700px)  
+    h1
+        font-size: 24px
+        line-height: 36px
+    h2
+        font-size: 60px
+        line-height: 91px
+    h3
+        font-size: 20px
+        line-height: 30px        
+    p
+        font-size: 14px
+        line-height: 21px
+    a        
+        font-size: 12px
+    .cta    
+        border-radius: 40px
+        padding: 11px 40px
+// Header            
+header .container
+    display: flex
+    justify-content: space-between   
+    align-items: center 
+    margin-top: 79px
+    .cta
+        border: 1px solid $Pink
+        padding: 10px 30px
+        font-size: 16px
+        color: $Pink
+        background-color: #fff
+        &:hover
+            color: $Light-Pink
+            border: 1px solid $Light-Pink
+@media only screen and (max-width: 700px)  
+    header .container
+        margin-top: 24px
+        p
+            font-size: 9.41px
+        img
+            width: 96px    
+        .cta
+            padding: 5px 18px
+
+// Hero            
+.hero .container
+    margin-top: 225px    
+    text-align: center
+    p
+        margin: 26px auto 49px auto
+        max-width: 52ch
+    img
+        margin: 120px auto  240px auto  
+@media only screen and (max-width: 1150px)  
+    .hero .container
+        margin-top: 100px    
+        img
+            margin: 120px auto  140px auto  
+@media only screen and (max-width: 700px)  
+    .hero .container img
+        margin: 104px auto  120px auto  
+
+// Stats        
+.stats .container
+    display: flex
+    justify-content: space-around
+    margin-bottom: 133px
+    p
+        font-size: 24px
+        line-height: 36px
+@media only screen and (max-width: 1150px)  
+    .stats .container
+        margin-bottom: 70px
+@media only screen and (max-width: 700px)  
+    .stats .container
+        flex-direction: column
+        margin-bottom: 30px
+        p
+            font-size: 15px
+            line-height: 22px
+        .stat
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        .stat:not(:last-child)
+            margin-bottom: 89px
+
+// Grow together    
+.grow-together .container, .convos .container, .users .container
+    display: flex    
+    align-items: center
+    width: 100%
+    p
+        font-size: 16px
+        line-height: 24px
+        margin-top: 26px
+        max-width: 55ch
+
+.illus-content
+    margin-right: 120px     
+.illus-content, .illus
+    width: 50%
+.convos .container 
+    flex-direction: row-reverse
+    margin: 120px auto 111px auto
+    .illus-content
+        margin-right: 0
+        margin-left: 120px
+.grow-together, .users
+    background-color: $Very-Pale-Blue
+.grow-bg-top
+    width: 100%
+    padding-top: 230px
+    background-image: url('./images/bg-section-top-desktop-1.svg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+.grow-bg-bottom
+    width: 100%
+    padding-bottom: 180px
+    background-image: url('./images/bg-section-bottom-desktop-1.svg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+.users-bg-top
+    width: 100%
+    padding-top: 230px
+    background-image: url('./images/bg-section-top-desktop-2.svg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+.users-bg-bottom
+    width: 100%
+    padding-bottom: 180px
+    background-image: url('./images/bg-section-bottom-desktop-2.svg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+
+@media only screen and (min-width: 2000px)  
+    .grow-bg-top, .users-bg-top
+        padding-top: 350px
+    .grow-bg-bottom, .users-bg-bottom
+        padding-bottom: 270px
+
+@media only screen and (max-width: 1150px)  
+    .illus-content
+        margin-right: 70px  
+    .convos .container 
+        .illus-content
+            margin-left: 70px
+@media only screen and (max-width: 700px)  
+    .grow-together .container, .convos .container, .users .container
+        flex-direction: column-reverse
+        text-align: center
+        p
+            font-size: 14px
+            line-height: 21px
+            margin-top: 16px
+            max-width: 100%
+
+    .illus-content
+        margin-right: 0    
+    .illus-content, .illus
+        width: 100%
+    .convos .container 
+        .illus-content
+            margin-left: 0
+    .grow-bg-top
+        background-image: url('./images/bg-section-top-mobile-1.svg')
+    .grow-bg-bottom
+        background-image: url('./images/bg-section-bottom-mobile-1.svg')
+    .users-bg-top
+        background-image: url('./images/bg-section-top-mobile-2.svg')
+    .users-bg-bottom
+        background-image: url('./images/bg-section-bottom-mobile-2.svg')
+
+// Prefooter        
+.pre-footer .container
+    text-align: center
+    margin-top: 135px
+    h3
+        margin-bottom: 50px
+
+.footer-bg
+    width: 100%
+    margin-top: 250px
+    padding-top: 220px
+    background-image: url('./images/bg-footer-top-desktop.svg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    
+@media only screen and (min-width: 2000px)  
+    .footer-bg
+        padding-top: 350px
+@media only screen and (max-width: 700px)  
+    .pre-footer .container
+        margin-top: 7px
+        h3
+            font-size: 24px
+            line-height: 36px
+            margin-bottom: 40px
+    .footer-bg
+        padding-top: 180px
+        background-image: url('./images/bg-footer-top-mobile.svg')
+// Footer
+footer 
+    background-color: $Very-Dark-Cyan
+    .container
+        padding: 93px calc(8px + 1.5625vw)
+        color: white
+        display: flex
+        justify-content: space-between
+    border: none    
+.lorem
+    font-size: 14px
+    line-height: 24px
+    margin-top: 16px
+    margin-bottom: 40px
+    max-width: 40ch
+.phone, .email
+    font-size: 16px
+    line-height: 24px
+    display: flex
+    align-items: center
+    img
+        margin-right: 16px
+.phone
+    margin-bottom:  16px  
+.email
+    margin-bottom: 80px
+.socials
+    display: flex   
+    a:not(:last-child)          
+        margin-right: 24px
+
+// Newsletter        
+form input
+    border-radius: 6px
+    font-size: 14px
+    line-height: 24px
+    font-family: 'Open Sans', sans-serif
+    border: none
+    &:focus 
+        color: $Very-Dark-Cyan
+        outline: 1px solid $Pink
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+    -webkit-box-shadow: 0 0 0 30px white inset !important
+    -webkit-text-fill-color: $Very-Dark-Cyan !important    
+    background-clip: content-box !important        
+#email
+    background-color: white
+    min-width: 320px
+    margin-right: 40px    
+    padding: 12px 16px
+#submit
+    background-color: $Pink
+    padding: 12px 41px    
+    color: white
+    font-weight: 600    
+    cursor: pointer
+    &:hover
+        background-color: $Light-Pink
+#subscribed
+    font-size: 12px
+    line-height: 24px
+    color: green 
+    margin-top: 5px
+    display: none
+
+@media only screen and (max-width: 1150px)  
+    form
+        display: flex
+        flex-direction: column
+    #email
+        margin-right: 0
+        margin-bottom: 30px        
+
+@media only screen and (max-width: 700px)  
+    footer 
+        .container
+            flex-direction: column-reverse
+            padding: 100px calc(8px + 1.5625vw) 46px calc(8px + 1.5625vw)
+    .footer-left
+        margin-top: 104px
+    .lorem
+            margin-bottom: 32px
+            max-width: 100%
+    .phone, .email
+        font-size: 14px
+        line-height: 24px
+
+    // Newsletter        
+    #email
+        margin-right: 0    
+    #submit
+        background-color: $Pink
+        width: 160px
