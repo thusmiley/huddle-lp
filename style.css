@@ -98,9 +98,9 @@ img {
     line-height: 21px;
   }
   .cta {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
-    padding: 11px 40px;
+    padding: 15px 40px;
   }
 }
 header .container {
@@ -127,6 +127,9 @@ header .container .cta:hover {
   }
   header .container img {
     width: 96px;
+  }
+  header .container .cta {
+    font-size: 14px;
   }
 }
 .hero .container {
