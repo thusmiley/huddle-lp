@@ -349,6 +349,7 @@ header .container .cta:hover {
   .footer-bg {
     padding-top: 150px;
     margin-top: 150px;
+    margin-bottom: -2px;
     background-image: url("./images/bg-footer-top-mobile.svg");
   }
 }
@@ -477,6 +478,8 @@ input:-webkit-autofill:active {
   }
   #submit {
     width: 160px;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 12px 41px;
+    border-radius: 6px;
   }
 }/*# sourceMappingURL=style.css.map */
