@@ -406,7 +406,6 @@ form input {
 }
 form input:focus {
   color: hsl(192deg, 100%, 9%);
-  outline: 1px solid hsl(322deg, 100%, 66%);
 }
 
 input:-webkit-autofill,
