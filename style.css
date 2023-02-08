@@ -47,6 +47,7 @@ a {
   background-color: hsl(322deg, 100%, 66%);
   padding: 25px 100px;
   transition: 0.3s ease;
+  font-weight: 600;
 }
 .cta:hover {
   background-color: hsl(321deg, 100%, 78%);
@@ -91,7 +92,8 @@ img {
     font-size: 12px;
   }
   .cta {
-    border-radius: 40px;
+    font-size: 12px;
+    line-height: 18px;
     padding: 11px 40px;
   }
 }
@@ -117,7 +119,7 @@ header .container .cta:hover {
   header .container {
     margin-top: 24px;
   }
-  header .container p {
+  header .container .cta {
     font-size: 9.41px;
   }
   header .container img {
