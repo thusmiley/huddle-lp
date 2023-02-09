@@ -403,6 +403,9 @@ form input {
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 form input:focus {
   color: hsl(192deg, 100%, 9%);
@@ -415,7 +418,6 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
   -webkit-text-fill-color: hsl(192deg, 100%, 9%) !important;
   background-clip: content-box !important;
-  -webkit-appearance: none;
 }
 
 #email {
