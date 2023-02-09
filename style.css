@@ -481,7 +481,7 @@ input:-webkit-autofill:active {
   #submit {
     width: 160px;
     font-size: 14px;
-    padding: 12px 41px;
-    border-radius: 6px;
+    padding: 12px 41px !important;
+    border-radius: 6px !important;
   }
 }/*# sourceMappingURL=style.css.map */
