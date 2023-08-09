@@ -204,9 +204,9 @@ header .container .cta:hover {
     width: 96px;
   }
   header .container .cta {
-    padding: 6px 19px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: auto;
+    padding: 11px 30px;
   }
   header .container .logo-pink {
     max-width: 30px;
@@ -703,6 +703,9 @@ input:-webkit-autofill:active {
   .phone a, .email a {
     font-size: 14px;
     line-height: 24px;
+  }
+  .socials a:not(:last-child) {
+    margin-right: 17px;
   }
   .newsletter {
     position: relative;
