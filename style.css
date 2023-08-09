@@ -204,7 +204,7 @@ header .container .cta:hover {
     width: 96px;
   }
   header .container .cta {
-    padding: 5px 18px;
+    padding: 6px 19px;
     font-size: 10px;
     line-height: auto;
   }
@@ -594,8 +594,6 @@ footer .container {
 }
 
 .phone, .email {
-  font-size: 16px;
-  line-height: 24px;
   display: flex;
   align-items: center;
   transition: 300ms;
@@ -702,7 +700,7 @@ input:-webkit-autofill:active {
     margin-bottom: 32px;
     max-width: 100%;
   }
-  .phone, .email {
+  .phone a, .email a {
     font-size: 14px;
     line-height: 24px;
   }
