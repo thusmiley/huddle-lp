@@ -7,7 +7,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: hsl(192deg, 100%, 9%);
+  color: hsl(192, 100%, 9%);
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -49,13 +50,13 @@ a {
 .cta {
   border-radius: 40px;
   box-shadow: 0.5px 0 4px 0.5px rgba(0, 0, 0, 0.05);
-  background-color: hsl(322deg, 100%, 66%);
+  background-color: hsl(322, 100%, 66%);
   padding: 25px 100px;
   transition: 0.3s ease;
   font-weight: 600;
 }
 .cta:hover {
-  background-color: hsl(321deg, 100%, 78%);
+  background-color: hsl(321, 100%, 78%);
 }
 
 img {
@@ -70,13 +71,84 @@ img {
   padding-right: calc(8px + 1.5625vw);
 }
 
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.bouncing-text {
+  margin-left: 10px;
+  display: flex;
+}
+
+.h, .u, .d, .d2, .l, .e {
+  position: relative;
+  color: hsl(192, 100%, 9%);
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.h {
+  animation: bounce 1s ease infinite;
+  -webkit-animation: bounce 1s ease infinite;
+}
+
+.u {
+  animation: bounce 1s ease infinite 0.1s;
+  -webkit-animation: bounce 1s ease infinite 0.1s;
+}
+
+.d {
+  animation: bounce 1s ease infinite 0.2s;
+  -webkit-animation: bounce 1s ease infinite 0.2s;
+}
+
+.d2 {
+  animation: bounce 1s ease infinite 0.3s;
+  -webkit-animation: bounce 1s ease infinite 0.3s;
+}
+
+.l {
+  animation: bounce 1s ease infinite 0.4s;
+  -webkit-animation: bounce 1s ease infinite 0.4s;
+}
+
+.e {
+  animation: bounce 1s ease infinite 0.5s;
+  -webkit-animation: bounce 1s ease infinite 0.5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-15px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  58% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  65% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
 @media only screen and (max-width: 1150px) {
   h2 {
     font-size: 70px;
     line-height: 100px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
     line-height: 36px;
@@ -98,9 +170,9 @@ img {
     line-height: 21px;
   }
   .cta {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 18px;
-    padding: 15px 40px;
+    padding: 11px 40px;
   }
 }
 header .container {
@@ -110,18 +182,21 @@ header .container {
   margin-top: 79px;
 }
 header .container .cta {
-  border: 1px solid hsl(322deg, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
   padding: 10px 30px;
   font-size: 16px;
-  color: hsl(322deg, 100%, 66%);
+  color: hsl(322, 100%, 66%);
   background-color: #fff;
+  box-shadow: 0px 0px 9px 0px rgba(255, 82, 193, 0.22);
+  transition: 0.3s;
+  font-weight: normal;
 }
 header .container .cta:hover {
-  color: hsl(321deg, 100%, 78%);
-  border: 1px solid hsl(321deg, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  border: 1px solid hsl(321, 100%, 78%);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   header .container {
     margin-top: 24px;
   }
@@ -129,11 +204,45 @@ header .container .cta:hover {
     width: 96px;
   }
   header .container .cta {
-    font-size: 14px;
+    padding: 5px 18px;
+    font-size: 10px;
+    line-height: auto;
+  }
+  header .container .logo-pink {
+    max-width: 30px;
+  }
+  header .container .bouncing-text {
+    margin-left: 5px;
+  }
+  header .container .h, header .container .u, header .container .d, header .container .d2, header .container .l, header .container .e {
+    font-size: 30px;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      transform: scale(0.9, 1.1) translateY(-8px);
+    }
+    50% {
+      transform: scale(1.05, 0.95) translateY(0);
+    }
+    58% {
+      transform: scale(1, 1) translateY(-3px);
+    }
+    65% {
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      transform: scale(1, 1) translateY(0);
+    }
   }
 }
 .hero .container {
-  margin-top: 225px;
+  margin-top: 180px;
   text-align: center;
 }
 .hero .container p {
@@ -141,7 +250,10 @@ header .container .cta:hover {
   max-width: 52ch;
 }
 .hero .container img {
-  margin: 120px auto 240px auto;
+  margin: 120px auto;
+}
+.hero .container a {
+  filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
 }
 
 @media only screen and (max-width: 1150px) {
@@ -152,7 +264,7 @@ header .container .cta:hover {
     margin: 120px auto 140px auto;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .hero .container img {
     margin: 104px auto 120px auto;
   }
@@ -167,27 +279,84 @@ header .container .cta:hover {
   line-height: 36px;
 }
 
+.stat {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.count4::after {
+  content: counter(count);
+  animation: counter4 5s linear forwards;
+}
+
+@keyframes counter4 {
+  0% {
+    counter-increment: count 1;
+  }
+  25% {
+    counter-increment: count 2;
+  }
+  50% {
+    counter-increment: count 3;
+  }
+  100% {
+    counter-increment: count 4;
+  }
+}
+.count7::after {
+  content: counter(count);
+  animation: counter7 5s linear forwards;
+}
+
+@keyframes counter7 {
+  0% {
+    counter-increment: count 1;
+  }
+  15% {
+    counter-increment: count 2;
+  }
+  30% {
+    counter-increment: count 3;
+  }
+  45% {
+    counter-increment: count 4;
+  }
+  55% {
+    counter-increment: count 5;
+  }
+  70% {
+    counter-increment: count 6;
+  }
+  100% {
+    counter-increment: count 7;
+  }
+}
 @media only screen and (max-width: 1150px) {
   .stats .container {
     margin-bottom: 70px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .stats .container {
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 30px;
   }
   .stats .container p {
     font-size: 15px;
     line-height: 22px;
   }
-  .stats .container .stat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .stat {
+    width: 100%;
+    justify-content: start;
+    text-align: left;
   }
-  .stats .container .stat:not(:last-child) {
+  .stat:not(:last-child) {
     margin-bottom: 89px;
   }
 }
@@ -221,7 +390,7 @@ header .container .cta:hover {
 }
 
 .grow-together, .users {
-  background-color: hsl(207deg, 100%, 98%);
+  background-color: hsl(207, 100%, 98%);
 }
 
 .grow-bg-top {
@@ -260,6 +429,43 @@ header .container .cta:hover {
   background-size: cover;
 }
 
+.illus {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.illus.scrolled {
+  opacity: 1;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @media only screen and (min-width: 2000px) {
   .grow-bg-top, .users-bg-top {
     padding-top: 350px;
@@ -276,7 +482,7 @@ header .container .cta:hover {
     margin-left: 70px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .grow-together .container, .convos .container, .users .container {
     flex-direction: column-reverse;
     text-align: center;
@@ -321,6 +527,9 @@ header .container .cta:hover {
 .pre-footer .container h3 {
   margin-bottom: 50px;
 }
+.pre-footer .container a {
+  filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
+}
 
 .footer-bg {
   width: 100%;
@@ -337,7 +546,7 @@ header .container .cta:hover {
     padding-top: 350px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .pre-footer .container {
     margin-top: 7px;
   }
@@ -354,7 +563,7 @@ header .container .cta:hover {
   }
 }
 footer {
-  background-color: hsl(192deg, 100%, 9%);
+  background-color: hsl(192, 100%, 9%);
   border: none;
 }
 footer .container {
@@ -362,6 +571,18 @@ footer .container {
   color: white;
   display: flex;
   justify-content: space-between;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.huddle-white {
+  margin-left: 10px;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .lorem {
@@ -377,9 +598,13 @@ footer .container {
   line-height: 24px;
   display: flex;
   align-items: center;
+  transition: 300ms;
 }
 .phone img, .email img {
   margin-right: 16px;
+}
+.phone a:hover, .email a:hover {
+  color: hsl(322, 100%, 66%);
 }
 
 .phone {
@@ -392,9 +617,13 @@ footer .container {
 
 .socials {
   display: flex;
+  transition: 0.3s;
 }
 .socials a:not(:last-child) {
   margin-right: 24px;
+}
+.socials a:hover svg path {
+  fill: #00C7FA;
 }
 
 form input {
@@ -406,9 +635,10 @@ form input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 form input:focus {
-  color: hsl(192deg, 100%, 9%);
+  color: hsl(192, 100%, 9%);
 }
 
 input:-webkit-autofill,
@@ -416,7 +646,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
-  -webkit-text-fill-color: hsl(192deg, 100%, 9%) !important;
+  -webkit-text-fill-color: hsl(192, 100%, 9%) !important;
   background-clip: content-box !important;
 }
 
@@ -428,7 +658,7 @@ input:-webkit-autofill:active {
 }
 
 #submit {
-  background-color: hsl(322deg, 100%, 66%);
+  background-color: hsl(322, 100%, 66%);
   padding: 12px 41px;
   color: white;
   font-weight: 600;
@@ -436,9 +666,10 @@ input:-webkit-autofill:active {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
+  transition: 0.3s;
 }
 #submit:hover {
-  background-color: hsl(321deg, 100%, 78%);
+  background-color: hsl(321, 100%, 78%);
 }
 
 #subscribed {
@@ -459,7 +690,7 @@ input:-webkit-autofill:active {
     margin-bottom: 30px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   footer .container {
     flex-direction: column-reverse;
     padding: 10px calc(8px + 1.5625vw) 46px calc(8px + 1.5625vw);
@@ -475,6 +706,9 @@ input:-webkit-autofill:active {
     font-size: 14px;
     line-height: 24px;
   }
+  .newsletter {
+    position: relative;
+  }
   #email {
     margin-right: 0;
   }
@@ -483,5 +717,8 @@ input:-webkit-autofill:active {
     font-size: 14px;
     padding: 12px 41px !important;
     border-radius: 6px !important;
+    position: absolute;
+    top: 215px;
+    right: 0;
   }
 }/*# sourceMappingURL=style.css.map */

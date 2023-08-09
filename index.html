@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Huddle landing page" />
-    <meta name="keywords" content="HTML,CSS" />
+    <meta name="description" content="Huddle" />
+    <meta name="keywords" content="HTML,SASS,JAVSCRIPT" />
     <meta name="author" content="Thu Smiley" />
     <meta property="og:image" content="./images/desktop-preview.jpg" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png" />
     <link rel="stylesheet" href="./style.css" />
 
-    <title>Huddle landing page with curved sections</title>
+    <title>Huddle</title>
   </head>
   <body>
     <!-- Header -->
     <header>
       <section class="container">
-        <img src="./images/logo.svg" alt="logo" />
+        <div class="logo">
+          <img class="logo-pink" src="./images/logo-pink.svg" alt="logo" />
+          <div class="bouncing-text">
+            <div class="h">H</div>
+            <div class="u">u</div>
+            <div class="d">d</div>
+            <div class="d2">d</div>
+            <div class="l">l</div>
+            <div class="e">e</div>
+          </div>
+        </div>
         <a href="#" class="cta">Try It Free</a>
       </section>
     </header>
@@ -32,12 +37,10 @@
         <div class="container">
           <h1>Build The Community Your Fans Will Love</h1>
           <p>
-            Huddle re-imagines the way we build communities. You have a voice,
-            but so does your audience. Create connections with your users as you
-            engage in genuine discussion.
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
           </p>
           <a href="#" class="cta">Get Started For Free</a>
-          <img src="./images/screen-mockups.svg" alt="" />
+          <img src="./images/screen-mockups.svg" alt="screens" />
         </div>
       </section>
 
@@ -45,13 +48,13 @@
       <section class="stats">
         <div class="container">
           <div class="stat">
-            <img src="./images/icon-communities.svg" alt="" />
-            <h2>1.4k+</h2>
+            <img src="./images/icon-communities.svg" alt="community" />
+            <h2>1.<span class="count4"></span>k+</h2>
             <p>Communities Formed</p>
           </div>
           <div class="stat">
-            <img src="./images/icon-messages.svg" alt="" />
-            <h2>2.7m+</h2>
+            <img src="./images/icon-messages.svg" alt="messages" />
+            <h2>2.<span class="count7"></span>m+</h2>
             <p>Messages Sent</p>
           </div>
         </div>
@@ -61,15 +64,13 @@
       <section class="grow-together">
         <div class="container">
           <div class="illus-content">
-           <h3>Grow Together</h3>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p> 
+            <h3>Grow Together</h3>
+            <p>
+              Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
+            </p>
           </div>
-          
-          <img class="illus" src="./images/illustration-grow-together.svg" alt="" />
+
+          <img class="illus slide-right" src="./images/illustration-grow-together.svg" alt="grow together" />
         </div>
       </section>
       <div class="grow-bg-bottom"></div>
@@ -79,14 +80,10 @@
         <div class="container">
           <div class="illus-content">
             <h3>Flowing Conversations</h3>
-          <p>
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
           </div>
-          
-          <img class="illus" src="./images/illustration-flowing-conversation.svg" alt="" />
+
+          <img class="illus slide-left" src="./images/illustration-flowing-conversation.svg" alt="conversation" />
         </div>
       </section>
       <div class="users-bg-top"></div>
@@ -97,13 +94,12 @@
           <div class="illus-content">
             <h3>Your Users</h3>
             <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
+              It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting
+              immediately.
+            </p>
           </div>
-          
-          <img class="illus" src="./images/illustration-your-users.svg" alt="" />
+
+          <img class="illus slide-right" src="./images/illustration-your-users.svg" alt="users" />
         </div>
       </section>
       <div class="users-bg-bottom"></div>
@@ -122,49 +118,62 @@
     <footer>
       <section class="container">
         <div class="footer-left">
-          <img src="./images/logo-white.png" alt="" />
-          <p class="lorem">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-          </p>
+          <div class="logo-footer">
+            <img src="./images/logo-white.svg" alt="logo" />
+            <h2 class="huddle-white">Huddle</h2>
+          </div>
+          <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
           <div class="phone">
-            <img src="./images/icon-phone.svg" alt="" /><p>
-               Phone:
-              +1-543-123-4567
-            </p>
+            <img src="./images/icon-phone.svg" alt="phone" />
+            <p>Phone: <a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
           </div>
           <div class="email">
-            <img src="./images/icon-email.svg" alt="" /> <p>
-              example@huddle.com
-            </p>
+            <img src="./images/icon-email.svg" alt="email" />
+            <p><a href="mailto:example@huddle.com">example@huddle.com</a></p>
           </div>
 
           <div class="socials">
-            <a href="#"><img src="./images/icon-fb.svg" alt="" /></a>
-            <a href="#"><img src="./images/icon-ig.png" alt="" /></a>
-            <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+            <a href="./"
+              ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="post-facebook">
+                  <path
+                    id="Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M28.8 0H3.2C1.44 0 0 1.44 0 3.2V28.8C0 30.56 1.44 32 3.2 32H28.8C30.56 32 32 30.56 32 28.8V3.2C32 1.44 30.56 0 28.8 0ZM27.2 3.2V8H24C23.04 8 22.4 8.64 22.4 9.6V12.8H27.2V17.6H22.4V28.8H17.6V17.6H14.4V12.8H17.6V8.8C17.6 5.76 20.16 3.2 23.2 3.2H27.2Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a href="./"
+              ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="post-twitter">
+                  <path
+                    id="Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M28.8 0H3.2C1.44 0 0 1.44 0 3.2V28.8C0 30.56 1.44 32 3.2 32H28.8C30.56 32 32 30.56 32 28.8V3.2C32 1.44 30.56 0 28.8 0ZM25.12 11.68C24.96 19.04 20.32 24.16 13.28 24.48C10.4 24.64 8.32 23.68 6.4 22.56C8.48 22.88 11.2 22.08 12.64 20.8C10.56 20.64 9.28 19.52 8.64 17.76C9.28 17.92 9.92 17.76 10.4 17.76C8.48 17.12 7.2 16 7.04 13.44C7.52 13.76 8.16 13.92 8.8 13.92C7.36 13.12 6.4 10.08 7.52 8.16C9.6 10.4 12.16 12.32 16.32 12.64C15.2 8.16 21.28 5.76 23.68 8.8C24.8 8.64 25.6 8.16 26.4 7.84C26.08 8.96 25.44 9.6 24.64 10.24C25.44 10.08 26.24 9.92 26.88 9.6C26.72 10.4 25.92 11.04 25.12 11.68Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </a>
           </div>
         </div>
 
         <!-- Newsletter -->
         <div class="newsletter">
           <h4>NEWSLETTER</h4>
-          <p class="lorem">
-            To recieve tips on how to grow your community, sign up to our weekly
-            newsletter. We’ll never send you spam or pass on your email address.
-          </p>
-          <form name='newsletter' >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email address" required
-            />
+          <p class="lorem">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address.</p>
+          <form name="newsletter">
+            <input type="email" name="email" id="email" placeholder="Email address" required />
 
             <input type="button" id="submit" value="Subscribe" onclick="formSubmit()" />
           </form>
-          <p id="subscribed"> √ Thanks for subscribing!</p>
-      </section></div>
+          <p id="subscribed">√ Thanks for subscribing!</p>
+        </div>
+      </section>
     </footer>
 
     <script src="./script.js"></script>
