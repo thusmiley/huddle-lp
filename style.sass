@@ -497,12 +497,16 @@ input:-webkit-autofill:active
     transition: 0.3s
     &:hover
         background-color: $Light-Pink
-#subscribed
+#subscribed, #error
     font-size: 12px
     line-height: 24px
-    color: green 
     margin-top: 5px
+    margin-left: 12px
     display: none
+#subscribed
+    color: green 
+#error
+    color: $Pink 
 
 @media only screen and (max-width: 1150px)  
     form

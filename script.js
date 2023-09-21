@@ -1,5 +1,15 @@
 function formSubmit() {
-  document.getElementById("subscribed").style.display = "block";
+  const email = document.querySelector("#email");
+  const success = document.getElementById("subscribed");
+  const error = document.getElementById("error");
+  if (!email.value == "") {
+    success.style.display = "block";
+    error.style.display = "none";
+  } else {
+    error.style.display = "block";
+    success.style.display = "none";
+
+  }
   setTimeout(function () {
     window.location.reload();
   }, 5000);
